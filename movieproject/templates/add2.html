@@ -1,0 +1,39 @@
+{% extends 'base2.html' %}
+{% block body %}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Enter your product name">
+    <input type="text" name="desc" placeholder="Enter your product description">
+    <input type="text" name="year" placeholder="Enter your product year">
+    <input type="file" name="img">
+    <input type="text" name="price" placeholder="Enter your product price">
+    <input type="submit">
+
+</form>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--</body>-->
+<!--</html>-->
